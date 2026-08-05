@@ -452,6 +452,7 @@ const state = {
   cards: [
     {...CONTRACTS.find(c=>c.sym==='MES'), id:'MES'},
     {...CONTRACTS.find(c=>c.sym==='MNQ'), id:'MNQ'},
+    {...CONTRACTS.find(c=>c.sym==='M2K'), id:'M2K'},
   ]
 };
 
@@ -551,6 +552,7 @@ function render(){
       state.cards = [
         {...CONTRACTS.find(c=>c.sym==='MES'), id:'MES_'+Date.now()},
         {...CONTRACTS.find(c=>c.sym==='MNQ'), id:'MNQ_'+Date.now()},
+        {...CONTRACTS.find(c=>c.sym==='MNQ'), id:'M2K_'+Date.now()},
       ];
       render();
     });
